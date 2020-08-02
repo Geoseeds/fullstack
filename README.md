@@ -1,13 +1,41 @@
 # fullstack
 fullstack demo
 
-# FE
+## FE
 vue.js
 
-# BE
+## BE
 python
 ML stuff
 
-# Infra
+## Infra
 digitalocean
 remote docker provisioning
+
+# Usage
+
+## Optional
+
+- Vetur expansion on vscode
+
+- PnP support for yarnv2 dependencies: see https://yarnpkg.com/advanced/editor-sdks#vscode
+```sh
+yarn dlx @yarnpkg/pnpify --sdk vscode
+```
+
+## Build
+
+```sh
+
+```
+
+## Run
+
+```sh
+```
+
+## Deploy
+
+```sh
+
+```
