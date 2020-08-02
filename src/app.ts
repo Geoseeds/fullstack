@@ -1,19 +1,17 @@
-import {Vue, Component, Prop} from 'vue-property-decorator';
+import Vue from 'vue';
+import Component from 'vue-class-component';
 
-@Component
-export default class App extends Vue {
-  @Prop() user!: object;
+// The @Component decorator indicates the class is a Vue component
+@Component({
+  // All component options are allowed in here
+  template: '<button @click="onClick">Click!</button>',
+})
+export default class MyComponent extends Vue {
+  // Initial data can be declared as instance properties
+  message: string = 'Hello!';
 
-  user = {
-    firstName: 'Harry',
-    lastName: 'Manchanda',
-  };
-
-  formatName(user) {
-    return `${user.firstName} ${user.lastName}`;
-  }
-
-  get exclamationMarks(): string {
-    return Array(this.enthusiasm + 1).join('!');
+  // Component methods can be declared as instance methods
+  onClick(): void {
+    window.alert(this.message);
   }
 }
