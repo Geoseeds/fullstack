@@ -1,12 +1,12 @@
-import { Vue, Component, Prop } from "vue-property-decorator";
+import {Vue, Component, Prop} from 'vue-property-decorator';
 
 @Component
 export default class App extends Vue {
   @Prop() user!: object;
 
   user = {
-    firstName: "Harry",
-    lastName: "Manchanda",
+    firstName: 'Harry',
+    lastName: 'Manchanda',
   };
 
   formatName(user) {
@@ -14,6 +14,6 @@ export default class App extends Vue {
   }
 
   get exclamationMarks(): string {
-    return Array(this.enthusiasm + 1).join("!");
+    return Array(this.enthusiasm + 1).join('!');
   }
 }
