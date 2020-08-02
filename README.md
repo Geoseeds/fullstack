@@ -14,28 +14,29 @@ remote docker provisioning
 
 # Usage
 
-## Optional
-
-- Vetur expansion on vscode
-
-- PnP support for yarnv2 dependencies: see https://yarnpkg.com/advanced/editor-sdks#vscode
+## Requirements
 ```sh
-yarn dlx @yarnpkg/pnpify --sdk vscode
+npm install -g parcel-bundler
 ```
 
 ## Build
 
 ```sh
-
+yarn build
 ```
 
 ## Run
 
 ```sh
+yarn local
 ```
 
 ## Deploy
 
-```sh
+Assumptions
+- you have a `docker context ls` called `geocloud` pointing to remote docker host
+- docker image must be built on remote
 
+```sh
+yarn deploy
 ```

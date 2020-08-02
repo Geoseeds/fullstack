@@ -2,6 +2,11 @@
   "name": "josefullstack",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build": "parcel build ./src/index.html",
+    "local": "docker build --tag jose-fullstack . && docker run -it --rm -p 8080:80 jose-fullstack",
+    "deploy": "echo TODO build on remote then: docker --context geocloud run --rm jose-fullstack"
+  },
   "devDependencies": {
     "@types/node": "^14.0.27",
     "@vue/cli-plugin-babel": "~4.4.0",
@@ -12,6 +17,7 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "parcel-bundler": "^1.12.4",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.5"
   }

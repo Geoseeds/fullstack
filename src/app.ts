@@ -6,7 +6,7 @@ import Component from 'vue-class-component';
   // All component options are allowed in here
   template: '<button @click="onClick">Click!</button>',
 })
-export default class MyComponent extends Vue {
+export default class Hello extends Vue {
   // Initial data can be declared as instance properties
   message: string = 'Hello!';
 
