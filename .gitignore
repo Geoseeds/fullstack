@@ -1,2 +1,8 @@
+# node
 node_modules
+
+# tsconfig
 dist/
+
+# parcel
+.cache/
